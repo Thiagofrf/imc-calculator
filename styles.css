@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --main-bg: #040924;
+    --text-color: #0C3440;
+    --button-bg: #02799D;
+    --label-color: #00453A;
+     --input-bg: #DCE2E9;
+     --alert-bg: #F03E3E;
+}
+
+body {
+    background: var(--main-bg);
+    font-size: 1.6rem;
+}
