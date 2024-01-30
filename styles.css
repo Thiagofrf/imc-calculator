@@ -92,10 +92,6 @@ form button:hover {
     place-content: center;
 }
 
-.modal-wrapper.hide {
-    opacity: 0;
-}
-
 .modal-card {
     margin-top: 0;
     position: relative;
@@ -119,6 +115,26 @@ form button:hover {
 .close:hover {
     cursor: pointer;
     transform: scale(1.1);
+}
+
+.alert-error {
+    position: absolute;
+    background: var(--alert-bg);
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+    padding: .8rem 0;
+    font-weight: bold;
+    transform: translateY(0);
+    transition: transform .5s;
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-30px);
 }
 
 @media (max-width: 600px) {
