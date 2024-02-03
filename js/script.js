@@ -5,6 +5,7 @@ import { notANumber } from './utils.js'
 const form = document.querySelector('form')
 const inputWeight = document.querySelector('#weight')
 const inputHeight = document.querySelector('#height')
+const formInputs = [inputHeight, inputWeight]
 
 form.onsubmit = (event) => {
     event.preventDefault()
@@ -25,3 +26,10 @@ form.onsubmit = (event) => {
 
     Modal.show()
 }
+
+
+formInputs.forEach((item) => {
+    item.addEventListener('input', () => {
+        AlertError.hide()
+    })
+})
